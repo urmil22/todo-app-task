@@ -1,18 +1,16 @@
-import React from 'react'
-
-const TodoCard = (props) => {
-    const { todo } = props;
-    const { id, title, completed} = todo;
-    return(
-        <div className='todo-list'>
-        <div>
-        <h4>{id} {title}</h4>
-        <h6>{`Completed: ${completed}`}</h6>
-        <button>Mark as completed</button>
-        <button>Delete</button>
+const TodoCard = ({ id, title, completed, setupEdit }) => {
+    return (
+      <div>
+        <p>Id: {id}</p>
+        <p>{title}</p>
+        <p>Completed: {`${completed}`}</p>
+        <div className="todo-option">
+          <button className="purple-btn">Mark as completed</button>
+          <button onClick={() => setupEdit(id)}>delete</button>
         </div>
-         </div>
-    )
-}
-
-export default TodoCard;
+      </div>
+    );
+  };
+  
+  export { TodoCard };
+  

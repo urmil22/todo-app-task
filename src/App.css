@@ -1,3 +1,10 @@
+/* #white: #FFFFFF 
+ pink-purple: #C620A7
+ grey(background): #171717
+ 
+*/
+
+
 .App {
   text-align: center;
 }
@@ -7,12 +14,12 @@ body{
   color: #FFFFFF;
 }
 
-.todos {
+/* .todos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
-}
+} */
 
 .todo-list {
   background-color: #2f2f2f;
@@ -21,5 +28,48 @@ body{
   padding: 20px;
   flex: 2 0 28%;
   height: 120px;
+} 
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100%;
+  padding: 2rem;
+  align-items: center;
 }
 
+.todos {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2f2f2f;
+  margin: 10px;
+  margin-right: 3rem;
+  padding: 20px;
+  flex: 2 0 22%;
+  gap: 3rem;
+  width:70%;
+  height: 120px;
+}
+
+.purple-btn{
+  background-color: #C620A7;
+  color: #FFFFFF;
+}
+.todo-option {
+  text-align: left;
+  margin-right: 17rem;
+  width: 55%;
+}
+
+.text {
+  margin-right: 56rem;
+}
