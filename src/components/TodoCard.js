@@ -1,8 +1,8 @@
 const TodoCard = ({ id, title, completed, setupEdit }) => {
     return (
-      <div>
+      <div className="todo">
         <p>Id: {id}</p>
-        <p>{title}</p>
+        <p className="todo-title">{title}</p>
         <p>Completed: {`${completed}`}</p>
         <div className="todo-option">
           <button className="purple-btn">Mark as completed</button>
@@ -11,6 +11,5 @@ const TodoCard = ({ id, title, completed, setupEdit }) => {
       </div>
     );
   };
-  
+
   export { TodoCard };
-  
