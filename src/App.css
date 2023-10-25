@@ -1,17 +1,16 @@
-/* #white: #FFFFFF 
+/* #white: #FFFFFF
  pink-purple: #C620A7
  grey(background): #171717
- 
-*/
 
+*/
 
 .App {
   text-align: center;
 }
 
-body{
+body {
   background-color: #171717;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* .todos {
@@ -28,48 +27,42 @@ body{
   padding: 20px;
   flex: 2 0 28%;
   height: 120px;
-} 
+}
 
 .main-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   height: 100%;
   padding: 2rem;
   align-items: center;
 }
 
 .todos {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
-  gap: 1rem; */
-
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   justify-content: center;
   background-color: #2f2f2f;
   margin: 10px;
-  margin-right: 3rem;
   padding: 20px;
   flex: 2 0 22%;
-  gap: 3rem;
-  width:70%;
-  height: 120px;
+  gap: 4rem;
 }
 
-.purple-btn{
-  background-color: #C620A7;
-  color: #FFFFFF;
-}
-.todo-option {
-  text-align: left;
-  margin-right: 17rem;
-  width: 55%;
+.purple-btn {
+  background-color: #c620a7;
+  color: #ffffff;
 }
 
-.text {
-  margin-right: 56rem;
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-title {
+  text-align: center;
 }
